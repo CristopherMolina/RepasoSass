@@ -5,15 +5,15 @@
 - npm install sass --save-dev
 - npm install -g sass
 - sass --watch sass:css (si detengo el terminal ya no muestra cambios)
-<link rel="stylesheet" href="./css/style.css">
+- <link rel="stylesheet" href="./css/style.css">
 
-$variable:red (crea variable)
+- $variable:red (crea variable)
 
-_nav(crear archivo partials)
+- _nav(crear archivo partials)
 
-@use 'nav' (llamar partials)
+- @use 'nav' (llamar partials)
 
-variables.$color(llamar una variable del partials variables)
+- variables.$color(llamar una variable del partials variables)
 
 nesting(anidado)
 ul{
@@ -23,18 +23,18 @@ ul{
     }
 }
 
-&(representa al padre)
+- &(representa al padre)
 
-#{$variable}(para usar variables como propiedad o selector)(interpolacion)
+- #{$variable}(para usar variables como propiedad o selector)(interpolacion)
 
-@for $iterador from 1 through 5{ } (para crear ciclos)
+- @for $iterador from 1 through 5{ } (para crear ciclos)
 
-@if $iterador == 5{ } (para condicionales)
+- @if $iterador == 5{ } (para condicionales)
 
-@mixin nombredelmixin{ } (para reutilizar codigo repetido)
+- @mixin nombredelmixin{ } (para reutilizar codigo repetido)
 
-@include nombredelmixin (para llamar al mixin)
+- @include nombredelmixin (para llamar al mixin)
 
-@function size($value){
+- @function size($value){
     @return $value*$unit;
 }
