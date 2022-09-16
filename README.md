@@ -5,7 +5,7 @@
 - npm install sass --save-dev
 - npm install -g sass
 - sass --watch sass:css (si detengo el terminal ya no muestra cambios)
-- (<link rel="stylesheet" href="./css/style.css">)
+- hacer link con el archivo css generado
 
 - $variable:red (crea variable)
 
