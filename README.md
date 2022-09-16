@@ -1,7 +1,7 @@
 # Resumen
 
 Tener instalado node.js
-nom init -y
+npm init -y
 npm install sass --save-dev
 npm install -g sass
 sass --watch sass:css (si detengo el terminal ya no muestra cambios)
