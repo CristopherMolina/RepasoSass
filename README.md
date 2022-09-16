@@ -15,7 +15,7 @@
 
 - variables.$color(llamar una variable del partials variables)
 
-nesting(anidado)
+- nesting(anidado)
 ul{
     li{
         a{
