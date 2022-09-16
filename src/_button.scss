@@ -1,0 +1,31 @@
+@use 'config';
+
+@mixin btn($background-color,$color,$bold){
+    background-color: $background-color;
+    color: $color;
+    border-radius: 50px;
+    padding: 20px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all ease-in-out 0.25s;
+
+    @if($bold == 'true'){
+        font-weight: bolder;
+    }
+}
+
+.btn{
+    &-cta{
+        @include btn(config.$primary-color,config.$secondary-color,'true');
+        &:hover{
+            @include btn(config.$secondary-color,config.$terciary-color,'true');
+            box-shadow: config.$box-shadow;
+        }
+    }
+    &:hover{
+        @include btn(config.$terciary-color,config.$font-color,'true');
+        box-shadow: config.$box-shadow;
+    }
+}
